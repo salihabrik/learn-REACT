@@ -30,13 +30,16 @@ const itemVariants = {
 };
 
 const Links = () => {
-    const items = ["Homepage","Services","Portfolio","Contact", "About",
+    const items = ["Homepage","Services",
+    "Portfolio","Contact", "About",
     ]
   return (
-    <motion.div className='links' variants={variants}  >
+    <motion.div className='links' variants={itemVariants} whileHover={{scale: 1.2}} whileTap={{scale: 0.9}} >
         
+
+
         {items.map((item)=>(
-            <motion.a href={`#${item}`} key={item} Variants={itemVariants} whileHover={{scale: 1.1}} whileTap={{scale: 0.95}} >
+            <motion.a href={`#${item}`} key={item}>
                 {item}
             </motion.a>
         ))}
@@ -45,4 +48,4 @@ const Links = () => {
   )
 }
 
-export default Links;
+export default Links

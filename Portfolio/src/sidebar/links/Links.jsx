@@ -1,10 +1,10 @@
 import './Links.scss'
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 const variants = {
     open: {
         transition: {
-             staggerChildren: 0.1,
+        staggerChildren: 0.1,
         }      
 
 
@@ -26,7 +26,9 @@ const itemVariants = {
     closed: {
         opacity: 0,
         y: 50,
-}};
+}
+};
+
 const Links = () => {
     const items = ["Homepage","Services",
     "Portfolio","Contact", "About",

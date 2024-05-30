@@ -2,4 +2,16 @@
     height: calc(100vh);
     overflow: hidden;
     background: linear-gradient(180deg, #0C0C1d, #111132);
+
+
+    .imageContainer{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
 }

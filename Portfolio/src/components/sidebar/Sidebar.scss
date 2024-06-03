@@ -6,6 +6,7 @@
     height: 100%;
     background-color: white;
     color: black;
+    
 
     .bg{
         position: fixed;
@@ -13,8 +14,8 @@
         left: 0;
         bottom: 0;
         width: 400px;
-        background-color: white;
-    
+        background: white;
+        z-index: 999;
 
         .links{
             position: absolute;
@@ -26,14 +27,9 @@
             height: 100%;
             gap: 20px;
             a{
-                font-size: 20px;
-                
+                font-size: 40px; 
             }
-    
-    
-
-    }
-
+        }
     }
 
     button{
@@ -44,8 +40,9 @@
         top: 25px;
         left: 25px;
         border: none;
-        background-color: white;
+        background-color: transparent;
         cursor: pointer;
+        z-index: 999;
     }
 
 }

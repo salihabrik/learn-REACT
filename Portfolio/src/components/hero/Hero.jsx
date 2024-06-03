@@ -16,7 +16,7 @@ const textVariants = {
   },
 };
 
-const buttonVariants = {
+const slideVariants = {
   initial: {
     x: 0,
 
@@ -29,7 +29,7 @@ const buttonVariants = {
       duration: 20,
       
     },
-  
+   }
   // scrollButton: {
   //   y: 10,
   //   opacity: 0,
@@ -37,7 +37,7 @@ const buttonVariants = {
   //     duration: 2,
   //     repeat: Infinity,
   //   },
-  }
+  // }
 };
 
 const Hero = () => {
@@ -54,13 +54,16 @@ const Hero = () => {
           <motion.h1 variants={textVariants}>I&apos;m a Frontend Developer.</motion.h1>
           <motion.p variants={textVariants}>I&apos;m a Frontend Developer based in Algeria. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</motion.p>
           <motion.div className='buttons'>
-            <motion.button variants={buttonVariants}>See the latest projects</motion.button>
-            <motion.button variants={buttonVariants}>Contact me</motion.button>
+            <motion.button variants={textVariants}>See the latest projects</motion.button>
+            <motion.button variants={textVariants}>Contact me</motion.button>
           </motion.div>
-          <motion.img variants={textVariants} animate="scrollButton" src="./scroll.png" alt="" />
+          <motion.img 
+          variants={textVariants}
+          animate="scrollButton"
+          src="./scroll.png" alt="" />
         </motion.div>
       </div>
-      <motion.div className='slidingTextContainer' variants={buttonVariants} initial="initial" animate="animate">
+      <motion.div className='slidingTextContainer' variants={slideVariants} initial="initial" animate="animate">
         Designer and Backend Developer
       </motion.div>
       <div className="imageContainer">

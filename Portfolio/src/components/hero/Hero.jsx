@@ -18,23 +18,25 @@ const textVariants = {
 
 const buttonVariants = {
   initial: {
-    y: 10,
-    opacity: 0,
+    x: 0,
+
   },
   animate: {
-    y: 0,
-    opacity: 1,
+    x: '-220%',
     transition: {
-      duration: 2,
-    },
-  },
-  scrollButton: {
-    y: 10,
-    opacity: 0,
-    transition: {
-      duration: 2,
       repeat: Infinity,
+      repeatType: 'mirror',
+      duration: 20,
+      
     },
+  
+  // scrollButton: {
+  //   y: 10,
+  //   opacity: 0,
+  //   transition: {
+  //     duration: 2,
+  //     repeat: Infinity,
+  //   },
   }
 };
 
@@ -58,9 +60,9 @@ const Hero = () => {
           <motion.img variants={textVariants} animate="scrollButton" src="./scroll.png" alt="" />
         </motion.div>
       </div>
-      <div className='slidingTextContainer'>
+      <motion.div className='slidingTextContainer' variants={buttonVariants} initial="initial" animate="animate">
         Designer and Backend Developer
-      </div>
+      </motion.div>
       <div className="imageContainer">
         <img src="./hero.jpg" alt="" />
       </div>
